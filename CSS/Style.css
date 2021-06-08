@@ -27,14 +27,27 @@ body {
     z-index: -1;
     width: 80%;
     height: auto;
+    padding: 1%;
+    border-radius: 10px;
 }
 .Sadrzaj {
     position: relative;
     display: grid;
     grid-gap: 1rem;
 }
+.Predmeti {
+    position: relative;
+    display: grid;
+    grid-gap: 1rem;
+    overflow-x: scroll;
+    text-align:center;
+}
 .Sadrzajras {
     margin: 1%;
+}
+table, th, td {
+    border: 1px solid black;
+    border-collapse: collapse;
 }
 
 /*Div za desno*/
@@ -47,10 +60,13 @@ body {
 }
 /*Div za lijevo*/
 .leftimg {
+    position: relative;
     display: inline-block;
     background-color: rgba(255,2555,255,0.9);
     border-radius: 10px;
     font-size: large;
+    width:100%;
+    overflow:auto;
 }
 
 .leftimg h2 {
@@ -111,6 +127,10 @@ body {
         grid-template-columns: repeat(1, 1fr);
         margin: 1%;
     }
+    .Predmeti {
+        grid-template-columns: repeat(1, 1fr);
+        margin: 1%;
+    }
     .rezervacija {
     left:30%;
     width:40%;
@@ -122,6 +142,13 @@ body {
     .FormNaslov {
     font-size:20px;
     }
+    .RasporedNaslov {
+        font-size:25px;
+    }
+    .Sadrzajras img {
+        height: 200px;
+        width: 700px;
+    }
 }
 
 @media (min-width: 400px) {
@@ -129,7 +156,6 @@ body {
         left: 30%;
         width: 40%;
     }
-
     .left {
         font-size: 15px;
     }
@@ -144,9 +170,19 @@ body {
         grid-template-columns: repeat(1, 1fr);
         margin: 1%;
     }
+    .Predmeti {
+        grid-template-columns: repeat(2, 1fr);
+        margin: 1%;
+    }
     .logo {
         width: 80px;
         height: 80px;
+    }
+    .RasporedNaslov {
+        font-size: 5vh;
+    }
+    .Sadrzajras img {
+        width: 100%;
     }
 }
 
@@ -163,13 +199,21 @@ body {
     .right {
         font-size: 25px;
     }
+
     .Recenzije {
         grid-template-columns: repeat(3, 1fr);
     }
+
     .Sadrzaj {
         grid-template-columns: repeat(2, 1fr);
         margin: 0.2%;
     }
+
+    .Predmeti {
+        grid-template-columns: repeat(4, 1fr);
+        margin: 1%;
+    }
+
     .logo {
         width: 80px;
         height: 80px;
