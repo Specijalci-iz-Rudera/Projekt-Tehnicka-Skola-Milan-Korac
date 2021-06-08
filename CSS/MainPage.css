@@ -99,23 +99,23 @@ body, html {
 
 /* First image (Logo. Full height) */
 .bgimg-1 {
-    background-image: url(../MEDIA/Risnjak_pocetna.jpg);
+    background-image: url(../MEDIA/INDEX/Getaldiceva1.jpg);
     min-height: 100%;
 }
 
 /* Second image (Portfolio) */
 .bgimg-2 {
-    background-image: url(../MEDIA/Plitvice-hrvatska.jpg);
+    background-image: url(../MEDIA/INDEX/DSC4095.jpg);
     min-height: 60%;
 }
 
 /* Third image (Contact) */
 .bgimg-3 {
-    background-image: url(../MEDIA/kalemegdan-tvrdjava2.jpg);
+    background-image: url(../MEDIA/INDEX/RACUNALSTVO2.jpg);
     min-height: 60%;
 }
 .bgimg-4 {
-    background-image: url(../MEDIA/GRCIJA-CATEGORY-COVER.jpg);
+    background-image: url(../MEDIA/INDEX/softwaredeveloper.jpg);
     min-height: 60%;
 }
 .w3-wide {
